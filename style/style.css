@@ -1,0 +1,194 @@
+.gario {
+    position:absolute;
+    top:103px;
+    left:250px;
+
+}
+.hero {
+    height:50px;
+    width:50px;
+
+}
+
+.jump {
+    position:absolute;
+    height:50px;
+    width:50px;
+    left:0px;
+    top:0px;
+    visibility:hidden;
+
+}
+.walk1 {
+    position:absolute;
+    height:50px;
+    width:50px;
+    left:0px;
+    top:0px;
+    opacity:0;
+
+}
+.walk2 {
+    position:absolute;
+    height:50px;
+    width:50px;
+    left:0px;
+    top:0px;
+    opacity:0;
+
+}
+
+.enemy1 {
+
+    position: absolute;
+    top: 120px;
+}
+
+.enemy2 {
+
+    position: absolute;
+    top: 120px;
+}
+
+.enemy3 {
+
+    position: absolute;
+    top: 120px;
+}
+
+.foe {
+    height:25px;
+    width:25px;
+
+}
+
+.finish {
+    position:absolute;
+    background-color: #eee;
+    background-image: linear-gradient( black 10%, transparent 10%, transparent 20%, black 20%,
+    black 30%,transparent 30%,transparent 40%, black 40%,
+    black 50%, transparent 50%,transparent 60%, black 60%,
+    black 70%,transparent 70%,transparent 80%, black 80%,
+    black 90%, transparent 90%);
+    top:144.5px;
+    height:85px;
+    width:10px;
+
+}
+.mountains {
+    position:absolute;
+    top:-35px;
+    left:-200px;
+    height:200px;
+    width:2700px;
+
+
+}
+.mountains2 {
+    position:absolute;
+    top:-55px;
+    left:0px;
+    height:250px;
+    width:2700px;
+
+
+}
+.mountains3 {
+    position:absolute;
+    top:-59px;
+    left:-1000px;
+    height:285px;
+    width:5000px;
+
+
+}
+
+.bg {
+    position:absolute;
+}
+.bg2 {
+    position:absolute;
+}
+.bg3 {
+    position:absolute;
+}
+
+.bg4 {
+    position:absolute;
+}
+
+
+h1 {
+    font-family: "Courier New";
+    position:absolute;
+}
+
+.instructions {
+    font-family: "Courier New";
+    position:absolute;
+    top:185px;
+    left:18%;
+    font-weight:bold;
+}
+.restarthint {
+    font-family: "Courier New";
+    position:absolute;
+    top:65px;
+    left:44%;
+    font-weight:bold;
+    visibility:hidden;
+}
+
+p {
+    font-family: "Courier New";
+    position:absolute;
+
+}
+
+.end {
+    visibility:visible;
+    position:absolute;
+    left:5%;
+    top:10px;
+    width:500px;
+}
+
+#click {
+    position:absolute;
+    height:222px;
+    width:50%;
+    overflow:hidden;
+}
+body {
+    margin:0px;
+}
+
+.restart{
+    position:absolute;
+    top:10px;
+    left:45%;
+    height:50px;
+    width:50px;
+    display:none;
+
+}
+
+.pause{
+    position:absolute;
+    top:10px;
+    left:40%;
+    height:50px;
+    width:50px;
+    display:none;
+
+}
+
+.resume{
+    position:absolute;
+    top:10px;
+    left:40%;
+    height:50px;
+    width:50px;
+    display:none;
+
+}
