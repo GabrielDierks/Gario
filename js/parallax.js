@@ -25,7 +25,7 @@ fillObjectArray();
 
 function fillObjectArray() {
 
-    var greyDiv = document.getElementById("grey");
+    var greyDiv = document.getElementById("brownMountain");
     var greyX = 0;
     var greyY = 0;
     var greyFactor = 0.005;
@@ -33,7 +33,7 @@ function fillObjectArray() {
     greyArray.push(greyDiv, greyX, greyY, greyFactor);
     objectArray.push(greyArray);
 
-    var ballDiv = document.getElementById("ball");
+    var ballDiv = document.getElementById("yellowMountain");
     var ballX = 0;
     var ballY = 0;
     var ballFactor = 0.005;
@@ -88,12 +88,12 @@ function moveDiv(tempX)
     {
 
 
-        if($global11==1)
+        /*if($global11==1)
         {
-            var yourDivPositionX = objectArray[i][3] * (0.2 * 2000 - tempX) + $global3;
-            var yourDivPositionX2 = objectArray2[i][3] * (0.2 * 2000 - tempX) + $global4;
-            var yourDivPositionX3 = objectArray3[i][3] * (0.5 * 800- tempX) + $global5;
-        }
+            var yourDivPositionX = objectArray[i][3]/4 * (0.2 * 2000 - tempX) + $global3;
+            var yourDivPositionX2 = objectArray2[i][3]/4 * (0.2 * 2000 - tempX) + $global4;
+            var yourDivPositionX3 = objectArray3[i][3]/4 * (0.5 * 800- tempX) + $global5;
+        }*/
         if($global11==2)
         {
             var yourDivPositionX = objectArray[i][3] * (0.2 * 2000 - tempX) + $global3;
@@ -114,17 +114,17 @@ function moveDiv2(tempY)
 {
     for (var i=0;i<objectArray.length;i++)
     {
+        if($global11==2) {
 
-
-        var yourDivPositionY = 0.01 * (0.5 * 1200 - tempY);
-        //$("p:last").text(objectArray[i][3]);
-        objectArray[i][0].style.top = yourDivPositionY + 'px';
-        objectArray2[i][0].style.top = yourDivPositionY*2 + 'px';
-        objectArray3[i][0].style.top = yourDivPositionY*4 + 'px';
-        $("#grey").stop();
-        $("#ball").stop();
-        $("#field").stop();
-
+            var yourDivPositionY = 0.01 * (0.5 * 1200 - tempY);
+            //$("p:last").text(objectArray[i][3]);
+            objectArray[i][0].style.top = yourDivPositionY + 'px';
+            objectArray2[i][0].style.top = yourDivPositionY * 2 + 'px';
+            objectArray3[i][0].style.top = yourDivPositionY * 4 + 'px';
+            $("#brownMountain").stop();
+            $("#yellowMountain").stop();
+            $("#field").stop();
+        }
 
     }
 }

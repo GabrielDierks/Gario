@@ -3,7 +3,7 @@ function animate() {
 
     if( $global11==1){
 
-        $("#grey").animate({"left": "-=1px"}, {
+        $("#brownMountain").animate({"left": "-=1px"}, {
 
             duration: 40,
             easing: "linear",
@@ -15,7 +15,7 @@ function animate() {
             }
 
         });
-        $("#ball").animate({"left": "-=1px"}, {
+        $("#yellowMountain").animate({"left": "-=1px"}, {
 
             duration: 20,
             easing: "linear",
