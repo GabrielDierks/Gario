@@ -1,49 +1,4 @@
-$( document ).ready(function() {
-    console.log( "ready!" );
-    $global= 100;
-    $global2= 2000;
-    $global6=200;
-    $global8=103;
-    $global9=1;
-    $global10=1;
-    $global11=1;
-
-    $( "h1:last" ).text( "LEVEL START!" );
-    $('.pause').css( 'cursor', 'pointer' );
-    $('.resume').css( 'cursor', 'pointer' );
-
-    setTimeout(function() {
-        $( "h1:last" ).text( "" );
-        $('.hero').css('visibility','hidden');
-        if ($global11==1) {
-            $('.pause').css('display','block');
-        }
-        $('.restart').css('display','block');
-        run();
-        animate();
-    },3000);
-
-});
-
-
-function run() {
-    if ($global6 < 1955 && $global11==1) {
-        setTimeout(function () {
-
-            $(".walk1").animate({"opacity": "0"}, 50, 'linear', run);
-            $(".walk2").animate({"opacity": "1"}, 50, 'linear', run);
-        }, 1);
-        $(".walk1").animate({"opacity": "1"}, 50, 'linear', run);
-        $(".walk2").animate({"opacity": "0"}, 50, 'linear', run);
-    }
-    else{
-        $('.hero').css('visibility','visible');
-    }
-}
-
-
-
-
+if (typeof window.orientation == 'undefined') {
 
 
 
@@ -172,6 +127,10 @@ function moveDiv2(tempY)
 
 
     }
+}
+
+
+
 }
 
 

@@ -126,6 +126,7 @@ h1 {
 .instructions {
     font-family: "Courier New";
     position:absolute;
+    margin-top:25%;
     top:185px;
     left:18%;
     font-weight:bold;
@@ -133,8 +134,9 @@ h1 {
 .restarthint {
     font-family: "Courier New";
     position:absolute;
+    margin-top:25%;
     top:65px;
-    left:44%;
+    right:calc(15% - 90px);
     font-weight:bold;
     visibility:hidden;
 }
@@ -155,8 +157,10 @@ p {
 
 #click {
     position:absolute;
+    border:10px solid cyan;
+    margin-top:25%;
     height:222px;
-    width:50%;
+    width:calc(100% - 20px);
     overflow:hidden;
 }
 body {
@@ -165,8 +169,9 @@ body {
 
 .restart{
     position:absolute;
+    margin-top:25%;
     top:10px;
-    left:45%;
+    right:calc(15% - 70px);
     height:50px;
     width:50px;
     display:none;
@@ -175,8 +180,9 @@ body {
 
 .pause{
     position:absolute;
+    margin-top:25%;
     top:10px;
-    left:40%;
+    right:15%;
     height:50px;
     width:50px;
     display:none;
@@ -185,8 +191,9 @@ body {
 
 .resume{
     position:absolute;
+    margin-top:25%;
     top:10px;
-    left:40%;
+    right:15%;
     height:50px;
     width:50px;
     display:none;
