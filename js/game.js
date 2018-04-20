@@ -69,6 +69,7 @@ $(".resume").on("click", function () {
 $("#click").on("click", function () {
     console.log('click');
     if (($global8 == 103 && $global11==1)&& ($global6 > 200 && $global6 < 1955)) {
+        $('.instructions').css('visibility', 'hidden');
         $('.walk1').css('opacity', '0');
         $('.walk2').css('opacity', '0');
         $(".walk1").stop();
